@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Thomas S Weather API</title>
+    <meta charset="UTF-8" />
+    <!-- LEAFLET -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <!-- SKELETON CSS BOILERPLATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+      <h1>Weather API</h1>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns clearfix">
+        <div id="map" style="height: 600px; " class="six columns"></div>
+        <div id="weather_informations" class="six columns">
+          <h2 id="weather_informations__title"><em>Please select a City ...</em></h2>
+          <div id="weahter_informations__days"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="WeatherApi.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
